@@ -346,30 +346,33 @@ header nav ul li a:hover {
   box-shadow: 0px -10px 32px 0px #cccccc;
 }
 
+.titulo-rodape{
+  font-weight: 800;
+  font-size: 28px;
+}
+
 .rodape-ctt{
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 32px;
   font-size: 1.2em;
 }
 
 .rodape-ul{
   display: flex;
-  flex-direction: row;
-  gap: 12px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.rodape-li{
+  display: flex;
+  gap: 10px;
   align-items: center;
 }
 
 .rodape-img{
-  height: 40px;
-}
-
-.rodape-logo{
-  background-color: #cccccc;
-  padding: 6px;
-  border-radius: 15%;
+  height: 30px;
 }
 
 .rodape-ref{
@@ -521,7 +524,7 @@ header nav ul li a:hover {
   }
 
   .header-img{
-    height: 35px;
+    height: 40px;
   }
 
   .ctt-img{
@@ -530,7 +533,7 @@ header nav ul li a:hover {
   }
 
   .ctt-txt{
-    font-size: 8px;
+    font-size: 10px;
     padding-left: 4px;
   }
 
@@ -549,7 +552,7 @@ header nav ul li a:hover {
   header nav ul li a {
     text-decoration: none;
     color:#ffffff;
-    font-size:8px;
+    font-size:11px;
     display: flex;
     text-align: center;
   }
@@ -594,6 +597,10 @@ header nav ul li a:hover {
     font-size: 10px;
   }
 
+  .titulo-rodape{
+    font-size: 14px;
+  }
+
   .rodape-img{
     height: 14px;
   }
@@ -620,25 +627,25 @@ header nav ul li a:hover {
   }
 
   .header-img{
-    height: 7dvh;
+    height: 98px;
   }
 
   .div-contatos{
     flex-direction: column;
-    gap: 6px;
+    gap:0px;
   }
 
   .ctt-img{
-    height: 12px;
+    height: 0px;
   }
 
   .ctt-txt{
-    font-size: 16px;
-    padding-left: 2px;
+    font-size: 0px;
+    padding-left: 0px;
   }
 
   .header-contatos{
-    gap: 6px;
+    gap: 0x;
     align-items: center;
   }
 
@@ -733,13 +740,17 @@ header nav ul li a:hover {
   }
 
   .rodape-ul{
-    gap: 6px;
-    flex-direction: column;
+    gap: 8px;
+    
   }
 
   .rodape-li{
     display: flex;
     gap: 6px;
+  }
+
+  .titulo-rodape{
+    font-size: 12px;
   }
 
   .rodape-img{
