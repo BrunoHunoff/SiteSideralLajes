@@ -650,7 +650,7 @@ header nav ul li a:hover {
   }
 
   .lista-links{
-    gap: 6px;
+    gap: 12px;
     flex-direction: column;
   }
   header nav ul li {
@@ -664,6 +664,8 @@ header nav ul li a:hover {
     font-size:14px;
     display: flex;
     text-align: center;
+    text-decoration:underline;
+    text-underline-offset: 2px;
   }
 
   .quem-somos{
