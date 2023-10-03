@@ -110,7 +110,7 @@ header{
   padding-left: 10px;
   font-family: 'Montserrat', sans-serif;
   color: #cccccc;
-  text-decoration: none;
+  text-underline-offset: 4px;
 }
 
 .lista-links{
@@ -373,6 +373,10 @@ header nav ul li a:hover {
 
 .rodape-img{
   height: 30px;
+}
+
+.rodape-txt{
+  color: #cccccc;
 }
 
 .rodape-ref{
