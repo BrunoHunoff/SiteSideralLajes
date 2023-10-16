@@ -629,12 +629,12 @@ header nav ul li a:hover {
 
   header{
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
     position: relative;
   }
 
   .header-img{
-    height: 98px;
+    height: 30px;
   }
 
   .div-contatos{
