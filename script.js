@@ -5,11 +5,15 @@ const maxItems = items.length;
 
 function scrollItems(){
   
+  items.forEach((item) => item.classList.remove("current"));
+  
   items[currentItem].scrollIntoView({
     behavior: "smooth",
     inline: "center",
     block: "nearest"
   });
+
+  items[currentItem].classList.add("current");
 }
 
 controls.forEach((control) => {
@@ -30,11 +34,8 @@ controls.forEach((control) => {
       currentItem = maxItems - 1;
     }
 
-    items.forEach((item) => item.classList.remove("current"));
-
     scrollItems();    
 
-    items[currentItem].classList.add("current");
   });
 });
 
@@ -42,4 +43,4 @@ const navHeight = document.querySelector('header').offsetHeight;
 
 //Scrool Padrão
 
-  document.documentElement.style.setProperty('--scroll-padding', navHeight + "px");
+document.documentElement.style.setProperty('--scroll-padding', navHeight + "px");
