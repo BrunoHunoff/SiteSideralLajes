@@ -156,11 +156,19 @@ header nav ul li a:hover {
   display: flex;
   transition: 0.5s ease-in-out;
   transform: translateX(0);
-  max-height: 84vh;
+  max-height: 86vh;
 }
 
 .item-ld{
   object-fit:cover;
+}
+
+.filtro{
+  position: absolute;
+  height: 100vh;
+  width: 500%;
+  background-color: #061e2f9c;
+  z-index: 999;
 }
 
 .landing-title{
@@ -696,8 +704,8 @@ header nav ul li a:hover {
   }
 
   .quem-somos-img{
-    height: 200px;
-    margin-top: px;  
+    height: 220px;
+    margin-top: 5px;  
   }
 
   .titulo-quem-somos{
@@ -721,7 +729,7 @@ header nav ul li a:hover {
   }
 
   .diferencial-img{
-    height: 220px;
+    height: 200px;
   }
 
   .titulo-diferencial{
