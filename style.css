@@ -147,10 +147,21 @@ header nav ul li a:hover {
 }
 
 /*Landing Section*/
-.landing-section{
-  background-image: url(imagens/foto-landing-final-1920.jpg);
-  height: 845px;
-  }
+
+.carrossel-landing{
+  overflow: hidden;
+}
+
+.container{
+  display: flex;
+  transition: 0.5s ease-in-out;
+  transform: translateX(0);
+  max-height: 84vh;
+}
+
+.item-ld{
+  object-fit:cover;
+}
 
 .landing-title{
   font-family: 'Montserrat', sans-serif;
@@ -158,7 +169,7 @@ header nav ul li a:hover {
   font-weight: bold;
   color: #cccccc;
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -426,11 +437,6 @@ header nav ul li a:hover {
     height: 300px;
   }
 
-  .landing-section{
-    background-image: url(imagens/foto-landing-final-1920.jpg);
-    height: 829;
-    }
-
     .carrossel-obras{
       max-width: 740px;
     }
@@ -523,9 +529,7 @@ header nav ul li a:hover {
 /*600px*/
 
 @media (max-width: 600px ){
-  .landing-section{
-    height: 651px;
-  }
+
 
   .landing-title{
     font-size: 28px;
@@ -620,14 +624,6 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 450px){
-    .landing-section{
-    height: 500px;
-  }
-
-  .landing-title{
-    font-size: 24px;
-  }
-
   header{
     flex-direction: column;
     gap: 0px;
@@ -676,9 +672,20 @@ header nav ul li a:hover {
     text-underline-offset: 2px;
   }
 
+  .container{
+    height: 50vh;
+  }
+
+  .landing-title{
+    font-size: 24px;
+  }
+
+
   .quem-somos{
     flex-direction: column;
     gap: 10px;
+    position: relative;
+    box-shadow: none;
   }
 
   .quem-somos-txt{
@@ -705,6 +712,7 @@ header nav ul li a:hover {
   .diferencial{
     flex-direction: column-reverse;
     gap: 10px;
+    position: relative;
   }
 
   .diferencial-txt{
@@ -727,7 +735,7 @@ header nav ul li a:hover {
   .carrossel-obras{
     position: relative;
     padding: 15px;
-    max-width: 355px;
+    max-width: 330px;
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
@@ -745,11 +753,11 @@ header nav ul li a:hover {
   }
 
   .arrow-right, .arrow-left{
-    line-height: 200px;
+    line-height: 185px;
   }
 
   .item{
-    height: 200px;
+    height: 185px;
   }
 
   .rodape{
@@ -781,5 +789,23 @@ header nav ul li a:hover {
   .ref-txt{
     font-size: 10px;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 300px){
+  .quem-somos-img{
+    height: 160px;
+  }
+
+  .diferencial-img{
+    height: 160px;
+  }
+
+  .carrossel-obras{
+    max-width: 250px;
+  }
+
+  .item{
+    height: 145px;
   }
 }

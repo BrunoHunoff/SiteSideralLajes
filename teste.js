@@ -81,8 +81,6 @@ function scrollItemsLeft(){
     box.style.transform = `translateX(${-widthTotal}px)`
   }
 
-  
-
   items[currentItem].classList.add("current");
 }
 
