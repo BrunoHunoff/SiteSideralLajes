@@ -639,7 +639,7 @@ header nav ul li a:hover {
   }
 
   .header-img{
-    height: 30px;
+    height: 45px;
   }
 
   .div-contatos{
@@ -681,7 +681,11 @@ header nav ul li a:hover {
   }
 
   .container{
-    height: 50vh;
+    max-height: 70vh;
+  }
+
+  .filtro{
+    width: 1000%;
   }
 
   .landing-title{
@@ -801,6 +805,10 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 300px){
+  .filtro{
+    width: 2000%;
+  }
+
   .quem-somos-img{
     height: 160px;
   }
